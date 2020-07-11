@@ -5,15 +5,15 @@ public abstract class Sweets {
     private String name;
     private Double price;
     private Double weight;
-    private String info;
+
 
     public Sweets(){};
 
-    public Sweets(String name, Double price, Double weight, String info) {
+    public Sweets(String name, Double price, Double weight) {
         this.name = name;
         this.price = price;
         this.weight = weight;
-        this.info = info;
+
     }
 
     public String getName() {
@@ -40,16 +40,10 @@ public abstract class Sweets {
         this.weight = weight;
     }
 
-    public String getInfo() {
-        return info;
-    }
 
-    public void setInfo(String info) {
-        this.info = info;
-    }
 
     @Override
    public String toString (){
-        return "Название = "+name+"; цена = "+price+"; вес = "+ weight+"; Инфо = "+ info;
+        return "Название = "+name+"; цена = "+price+"; вес = "+ weight;
     }
 }
